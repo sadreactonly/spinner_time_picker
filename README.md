@@ -25,7 +25,7 @@ Add the following line to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_spinner_time_picker: ^0.1.0
+  flutter_spinner_time_picker: [latest]
 ```
 
 ## Usage

@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * updated readme file
+
+## 0.0.4
+
+* updated readme file
