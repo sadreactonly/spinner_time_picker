@@ -12,11 +12,11 @@ A Flutter package providing custom time picker widgets for easy time selection i
 
 ### Dark Mode
 
-![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-dark.gif)
+![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-dark.gif?raw=true)
 
 ## Light Mode
 
-![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-light.gif)
+![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-light.gif?raw=true)
 
 
 ## Installation
