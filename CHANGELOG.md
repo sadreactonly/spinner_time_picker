@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * updated readme file
+
+## 0.0.5
+
+* remove  files 
