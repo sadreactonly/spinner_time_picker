@@ -3,6 +3,22 @@
 
 A Flutter package providing custom time picker widgets for easy time selection in your Flutter applications.
 
+[![pub](https://img.shields.io/pub/v/flutter_spinner_time_picker.svg)](https://pub.dev/packages/flutter_spinner_time_picker)
+[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A Flutter package providing custom time picker widgets for easy time selection in your Flutter applications.
+
+## Preview
+
+### Dark Mode
+
+![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-dark.gif)
+
+## Light Mode
+
+![Flutter Buttons with progressbar indicators](https://github.com/hosseinvejdani/flutter_spinner_time_picker/blob/master/assets/show-light.gif)
+
+
 ## Installation
 
 Add the following line to your `pubspec.yaml` file:
