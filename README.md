@@ -58,6 +58,26 @@ void _showTimePicker() async {
 ```
 
 
+## Fully customizable package
+
+```dart
+showSpinnerTimePicker(
+  context,
+  title: 'Custom Time Picker',
+  backgroundColor: Colors.grey[100],
+  foregroundColor: Colors.black,
+  titleStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+  buttonStyle: ButtonStyle(
+    backgroundColor: MaterialStateProperty.all(Colors.blue),
+  ),
+  buttonTextStyle: TextStyle(fontSize: 16, color: Colors.white),
+  barrierDismissible: true,
+  // ... other customization options
+);
+
+```
+
+
 ## Complete Example
 
 Here's a simple example of how to use the custom time picker widgets:

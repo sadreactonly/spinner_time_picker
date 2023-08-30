@@ -4,4 +4,8 @@
 
 ## 0.0.2
 
-* added screen shots
+* added screenshots
+
+## 0.0.3
+
+* updated readme file
