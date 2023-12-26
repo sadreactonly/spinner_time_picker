@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * remove  files 
+
+## 0.1.0
+
+* removed `SpinnerNumericPicker` Widget and add `SpinnerItemPicker<T>` widget instead 

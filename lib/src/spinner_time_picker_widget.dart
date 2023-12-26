@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-import 'spinner_number_picker_widget.dart';
+import 'spinner_item_picker_widget.dart';
 
 // Define a StatefulWidget for a custom time picker widget
 class SpinnerTimePicker extends StatefulWidget {
@@ -96,15 +96,26 @@ class _SpinnerTimePickerState extends State<SpinnerTimePicker> {
   }
 
   // Build the minute picker
-  SpinnerNumericPicker _minutePicker() {
-    return SpinnerNumericPicker(
-      initValue: selectedMinute,
-      maxValue: 60,
+  SpinnerItemPicker _minutePicker() {
+    final items = List.generate(60, (index) => index);
+    return SpinnerItemPicker(
+      items: items,
+      initSelectedIndex: items.indexOf(selectedMinute),
+      selectedItemToWidget: (item) {
+        return Text(
+          item.toString().padLeft(2, "0"), // Display with leading zero
+          style: widget.selectedTextStyle,
+        );
+      },
+      nonSelectedItemToWidget: (item) {
+        return Text(
+          item.toString().padLeft(2, "0"), // Display with leading zero
+          style: widget.nonSelectedTextStyle,
+        );
+      },
       height: widget.spinnerHeight,
       width: widget.spinnerWidth,
-      digitHeight: widget.digitHeight,
-      nonSelectedTextStyle: widget.nonSelectedTextStyle,
-      selectedTextStyle: widget.selectedTextStyle,
+      itemHeight: widget.digitHeight,
       spinnerBgColor: widget.spinnerBgColor,
       onSelectedItemChanged: (value) {
         setState(() {
@@ -129,15 +140,27 @@ class _SpinnerTimePickerState extends State<SpinnerTimePicker> {
   }
 
   // Build the hour picker
-  SpinnerNumericPicker _hourPicker() {
-    return SpinnerNumericPicker(
-      maxValue: widget.is24HourFormat ? 24 : 12,
-      initValue: selectedHour,
+  SpinnerItemPicker _hourPicker() {
+    final items = List.generate(widget.is24HourFormat ? 24 : 12, (index) => (widget.is24HourFormat ? index : index + 1));
+
+    return SpinnerItemPicker(
+      items: items,
+      initSelectedIndex: items.indexOf(selectedMinute),
+      selectedItemToWidget: (item) {
+        return Text(
+          item.toString().padLeft(2, "0"), // Display with leading zero
+          style: widget.selectedTextStyle,
+        );
+      },
+      nonSelectedItemToWidget: (item) {
+        return Text(
+          item.toString().padLeft(2, "0"), // Display with leading zero
+          style: widget.nonSelectedTextStyle,
+        );
+      },
       height: widget.spinnerHeight,
       width: widget.spinnerWidth,
-      digitHeight: widget.digitHeight,
-      nonSelectedTextStyle: widget.nonSelectedTextStyle,
-      selectedTextStyle: widget.selectedTextStyle,
+      itemHeight: widget.digitHeight,
       spinnerBgColor: widget.spinnerBgColor,
       onSelectedItemChanged: (value) async {
         setState(() {
