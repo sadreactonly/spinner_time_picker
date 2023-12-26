@@ -37,14 +37,12 @@ class SpinnerItemPicker<T> extends StatefulWidget {
 class _SpinnerItemPickerState<T> extends State<SpinnerItemPicker<T>> {
   late FixedExtentScrollController scrollController;
   late int _selectedIndex;
-  late T _selectedItem;
 
   @override
   void initState() {
     // Initialize state variables and scroll controller
     setState(() {
       _selectedIndex = widget.initSelectedIndex;
-      _selectedItem = widget.items[_selectedIndex];
       scrollController = FixedExtentScrollController(initialItem: _selectedIndex);
     });
     super.initState();
@@ -81,9 +79,8 @@ class _SpinnerItemPickerState<T> extends State<SpinnerItemPicker<T>> {
 
           setState(() {
             _selectedIndex = wrappedIndex;
-            _selectedItem = widget.items[wrappedIndex];
           });
-          widget.onSelectedItemChanged(_selectedItem); // Notify the parent about the value change
+          widget.onSelectedItemChanged(widget.items[_selectedIndex]); // Notify the parent about the value change
         },
       ),
     );

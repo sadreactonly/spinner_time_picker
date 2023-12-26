@@ -21,3 +21,8 @@
 ## 0.1.0
 
 * removed `SpinnerNumericPicker` Widget and add `SpinnerItemPicker<T>` widget instead 
+
+
+## 0.2.0
+
+* fixed bug with time picker

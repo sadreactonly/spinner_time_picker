@@ -50,7 +50,9 @@ class _SpinnerTimePickerState extends State<SpinnerTimePicker> {
     final selectedTime = widget.initTime;
     setState(() {
       selectedDayPeriod = selectedTime.period;
-      selectedHour = !widget.is24HourFormat && selectedDayPeriod == DayPeriod.pm ? selectedTime.hour - 12 : selectedTime.hour;
+      selectedHour = !widget.is24HourFormat && selectedDayPeriod == DayPeriod.pm && selectedTime.hour != 12
+          ? selectedTime.hour - 12
+          : selectedTime.hour;
       selectedMinute = selectedTime.minute;
     });
     super.initState();
@@ -145,7 +147,7 @@ class _SpinnerTimePickerState extends State<SpinnerTimePicker> {
 
     return SpinnerItemPicker(
       items: items,
-      initSelectedIndex: items.indexOf(selectedMinute),
+      initSelectedIndex: items.indexOf(selectedHour),
       selectedItemToWidget: (item) {
         return Text(
           item.toString().padLeft(2, "0"), // Display with leading zero
@@ -173,7 +175,11 @@ class _SpinnerTimePickerState extends State<SpinnerTimePicker> {
 
   // Update the selected time based on user choices
   void setSelectedTime() {
-    final offset = !widget.is24HourFormat && selectedDayPeriod == DayPeriod.pm ? 12 : 0;
+    final isPM = selectedDayPeriod == DayPeriod.pm;
+    final is12HrFormat = !widget.is24HourFormat;
+    final isNot12Hr = selectedHour != 12;
+    int offset = is12HrFormat && isPM && isNot12Hr ? 12 : 0;
+
     widget.onChangedSelectedTime(TimeOfDay(hour: selectedHour + offset, minute: selectedMinute));
   }
 }
