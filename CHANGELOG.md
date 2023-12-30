@@ -1,28 +1,40 @@
-## 0.0.1
+## 0.2.1
 
-* just added files
+* updated changelog.md file
+  
+## 0.2.0
 
-## 0.0.2
-
-* added screenshots
-
-## 0.0.3
-
-* updated readme file
-
-## 0.0.4
-
-* updated readme file
-
-## 0.0.5
-
-* remove  files 
+* fixed bug with time picker
 
 ## 0.1.0
 
 * removed `SpinnerNumericPicker` Widget and add `SpinnerItemPicker<T>` widget instead 
 
+## 0.0.5
 
-## 0.2.0
+* remove  files 
 
-* fixed bug with time picker
+## 0.0.4
+
+* updated readme file
+
+## 0.0.3
+
+* updated readme file
+
+## 0.0.2
+
+* added screenshots
+
+## 0.0.1
+
+* just added files
+
+
+
+
+
+
+
+
+
