@@ -47,8 +47,8 @@ Future<TimeOfDay?> showSpinnerTimePicker(BuildContext context,
 
   // Set default values for various optional parameters
   final _foregroundColor =
-      foregroundColor ?? colorScheme.onBackground.withAlpha(200);
-  final _backgroundColor = backgroundColor ?? colorScheme.background;
+      foregroundColor ?? colorScheme.surface.withAlpha(200);
+  final _backgroundColor = backgroundColor ?? colorScheme.surface;
   final _title = title ?? "Select a Time";
   final _titleStyle =
       titleStyle ?? TextStyle(fontSize: 18, color: _foregroundColor);

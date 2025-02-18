@@ -1,7 +1,7 @@
-name: flutter_spinner_time_picker
+name: spinner_time_picker
 description: A Flutter package providing custom time picker widgets for easy time selection in your Flutter applications.
-version: 0.2.1
-homepage: https://github.com/hosseinvejdani/flutter_spinner_time_picker
+version: 1.0.0
+homepage: https://github.com/sadreactonly/spinner_time_picker
 
 
 environment:

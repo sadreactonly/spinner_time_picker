@@ -1,10 +1,9 @@
 
-# Flutter Spinner Time Picker
+# Spinner Time Picker
 
 A Flutter package providing custom time picker widgets for easy time selection in your Flutter applications.
 
-[![pub](https://img.shields.io/pub/v/flutter_spinner_time_picker.svg)](https://pub.dev/packages/flutter_spinner_time_picker)
-[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 A Flutter package providing custom time picker widgets for easy time selection in your Flutter applications.
 
@@ -24,7 +23,7 @@ Add the following line to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_spinner_time_picker: [latest]
+  spinner_time_picker: [latest]
 ```
 
 ## Usage
@@ -32,7 +31,7 @@ dependencies:
 Import the package:
 
 ```dart
-import 'package:flutter_spinner_time_picker/flutter_spinner_time_picker.dart';
+import 'package:spinner_time_picker/spinner_time_picker.dart';
 ```
 
 ### How to use
@@ -83,7 +82,7 @@ Here's a simple example of how to use the custom time picker widgets:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_spinner_time_picker/flutter_spinner_time_picker.dart';
+import 'package:spinner_time_picker/spinner_time_picker.dart';
 
 void main() {
   runApp(const MyApp());

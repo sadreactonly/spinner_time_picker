@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spinner_time_picker/flutter_spinner_time_picker.dart';
+import 'package:spinner_time_picker/spinner_time_picker.dart';
 
 void main() {
   runApp(const MyApp());
